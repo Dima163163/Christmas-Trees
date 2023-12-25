@@ -36,6 +36,10 @@ body {
   color: var(--main-color);
 }
 
+h1, h2, h3, p {
+  margin: 0;
+}
+
 h1, h2 {
   font-family: Cormorant, serif;
   font-weight: 700;
@@ -46,8 +50,9 @@ h1, h2 {
 }
 
 .container {
-  max-width: 1290px;
+  max-width: 1374px;
   margin: 0 auto;
+  padding: 0 42px;
 }
 
 .hide {
@@ -71,4 +76,16 @@ button, input {
 
 button {
   cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 0 39px;
+  }
+}
+
+@media (max-width: 580px) {
+  .container {
+    padding: 0 10px;
+  }
 }
